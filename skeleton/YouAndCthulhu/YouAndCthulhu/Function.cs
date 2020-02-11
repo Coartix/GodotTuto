@@ -121,32 +121,40 @@ namespace YouAndCthulhu
                     }
                     case LexerParser.CommandToken.TOKEN_MOVE_IN:
                     {
-                        UInt64 id = LexerParser.GetIdNatural(commands, ref index);
-                        char idL = LexerParser.GetIdLetter(commands, ref index);
-                        int nl = (int) (idL - 'A');
-                        
-                        //act = () => { MoveIn(); };
+                        act = () =>
+                        {
+                            MoveIn(ftable.Search(LexerParser.GetIdNatural(commands, ref index),
+                                LexerParser.GetIdLetter(commands, ref index)));
+                        };
                         break;
                     }
                     case LexerParser.CommandToken.TOKEN_MOVE_OUT:
                     {
-                        throw new NotImplementedException("Do it");
+                        act = () =>
+                        {
+                            MoveOut(ftable.Search(LexerParser.GetIdNatural(commands, ref index),
+                                LexerParser.GetIdLetter(commands, ref index)));
+                        };
+                        break;
                     }
                     case LexerParser.CommandToken.TOKEN_CALL:
                     {
                         // calling a function simply consists in executing it...
-                        throw new NotImplementedException("Do it");
+                        act = ftable.Search(LexerParser.GetIdNatural(commands, ref index),
+                            LexerParser.GetIdLetter(commands, ref index)).Execute;
+                        break;
                     }
                     case LexerParser.CommandToken.TOKEN_CALL_ACC:
                     {
-                        throw new NotImplementedException("Do it");
+                        act = ftable.SearchRegister(accumulator,
+                            LexerParser.GetIdLetter(commands, ref index)).Execute;
+                        break;
                     }
                     default:
                     {
                         throw new Exception("Unexpected token in parsing");
                     }
                 }
-
                 execution.Add(act);
             }
         }

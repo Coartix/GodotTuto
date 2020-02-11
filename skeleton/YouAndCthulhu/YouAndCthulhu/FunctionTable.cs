@@ -54,28 +54,72 @@ namespace YouAndCthulhu
         // Adds a function at the right place in the table
         public void Add(Function f)
         {
-            //Manque l'exception.
             List<Function> p = ftable[f.Idchar - 'A'];
-            p.Insert(BinarySearch(p,f.Idnum),f);
-                
+            int binSearch = BinarySearch(p, f.Idnum);
+            if (p[binSearch]== f)
+            {
+                throw new Exception("Already in the function list.");
+            }
+            else
+            {
+                ftable[f.Idchar - 'A'].Insert(binSearch,f);
+            }
         }
 
         // Search method, returns the right function.
         public Function Search(ulong idnum, char idchar)
         {
-            throw new NotImplementedException("Do it");
+            try
+            {
+                List<Function> p = ftable[idchar - 'A'];
+                int binSearch = BinarySearch(p, idnum);
+                if (p[binSearch].Idnum == idnum)
+                {
+                    return (p[(int)idnum]);
+                }
+                else
+                {
+                    throw new  Exception("No function found in Search");
+                }
+            }
+            catch (IndexOutOfRangeException e)
+            {
+                Console.WriteLine("Not a good idchar.");
+                throw e;
+            }
         }
 
         // Same but with a register which could be negative
         public Function SearchRegister(int register, char idchar)
         {
-            throw new NotImplementedException("Do it");
+            
+            try
+            {
+                if (register<0)
+                    throw new Exception("Accumulator < 0");
+                List<Function> p = ftable[idchar - 'A'];
+                int binSearch = BinarySearch(p, (ulong)register);
+                if (p[binSearch].Idnum != (ulong) register)
+                {
+                    return (p[register]);
+                }
+                else
+                {
+                    throw new  Exception("No function found in Search");
+                }
+            }
+            catch (IndexOutOfRangeException e)
+            {
+                Console.WriteLine("Not a good idchar.");
+                throw e;
+            }
         }
 
         // Executes the ftable (by executing 0A)
         public void Execute()
         {
-            throw new NotImplementedException("Do it");
+            if (ftable[0][0].Idnum==0)
+                Search(0, 'A').Execute();
         }
     }
 }

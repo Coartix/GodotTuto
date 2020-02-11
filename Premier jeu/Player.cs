@@ -17,7 +17,6 @@ public class Player : Area2D
 	public override void _Ready()
     {
         _screenSize = GetViewport().GetSize();
-		Hide();
     }
 
     // Called every frame. 'delta' is the elapsed time since the previous frame.
