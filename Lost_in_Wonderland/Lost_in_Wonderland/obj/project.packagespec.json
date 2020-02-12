@@ -1,0 +1,43 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "/afs/cri.epita.net/user/h/hu/hugo.deplagne/u/csharp-tp8-hugo.deplagne/Lost_in_Wonderland/Lost_in_Wonderland/Lost_in_Wonderland.csproj",
+    "projectName": "Lost_in_Wonderland",
+    "projectPath": "/afs/cri.epita.net/user/h/hu/hugo.deplagne/u/csharp-tp8-hugo.deplagne/Lost_in_Wonderland/Lost_in_Wonderland/Lost_in_Wonderland.csproj",
+    "outputPath": "/afs/cri.epita.net/user/h/hu/hugo.deplagne/u/csharp-tp8-hugo.deplagne/Lost_in_Wonderland/Lost_in_Wonderland/obj/",
+    "projectStyle": "PackageReference",
+    "originalTargetFrameworks": [
+      "netcoreapp2.2"
+    ],
+    "sources": {
+      "https://api.nuget.org/v3/index.json": {}
+    },
+    "frameworks": {
+      "netcoreapp2.2": {
+        "projectReferences": {}
+      }
+    },
+    "warningProperties": {
+      "warnAsError": [
+        "NU1605"
+      ]
+    }
+  },
+  "frameworks": {
+    "netcoreapp2.2": {
+      "dependencies": {
+        "Microsoft.NETCore.App": {
+          "suppressParent": "All",
+          "target": "Package",
+          "version": "[2.2.0, )",
+          "autoReferenced": true
+        }
+      },
+      "imports": [
+        "net461"
+      ],
+      "assetTargetFallback": true,
+      "warn": true
+    }
+  }
+}

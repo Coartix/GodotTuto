@@ -1,0 +1,55 @@
+{
+  "format": 1,
+  "restore": {
+    "/afs/cri.epita.net/user/h/hu/hugo.deplagne/u/csharp-tp8-hugo.deplagne/Lost_in_Wonderland/Lost_in_Wonderland/Lost_in_Wonderland.csproj": {}
+  },
+  "projects": {
+    "/afs/cri.epita.net/user/h/hu/hugo.deplagne/u/csharp-tp8-hugo.deplagne/Lost_in_Wonderland/Lost_in_Wonderland/Lost_in_Wonderland.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/afs/cri.epita.net/user/h/hu/hugo.deplagne/u/csharp-tp8-hugo.deplagne/Lost_in_Wonderland/Lost_in_Wonderland/Lost_in_Wonderland.csproj",
+        "projectName": "Lost_in_Wonderland",
+        "projectPath": "/afs/cri.epita.net/user/h/hu/hugo.deplagne/u/csharp-tp8-hugo.deplagne/Lost_in_Wonderland/Lost_in_Wonderland/Lost_in_Wonderland.csproj",
+        "packagesPath": "/home/hugo.deplagne/.nuget/packages/",
+        "outputPath": "/afs/cri.epita.net/user/h/hu/hugo.deplagne/u/csharp-tp8-hugo.deplagne/Lost_in_Wonderland/Lost_in_Wonderland/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/hugo.deplagne/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}
