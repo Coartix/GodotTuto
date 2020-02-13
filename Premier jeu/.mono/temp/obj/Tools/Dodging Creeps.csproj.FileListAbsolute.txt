@@ -10,3 +10,9 @@ D:\Godot Tuto\GodotTuto\Premier jeu\.mono\temp\obj\Tools\Dodging Creeps.csprojAs
 D:\Godot Tuto\GodotTuto\Premier jeu\.mono\temp\obj\Tools\Dodging Creeps.csproj.CoreCompileInputs.cache
 D:\Godot Tuto\GodotTuto\Premier jeu\.mono\temp\obj\Tools\Dodging Creeps.dll
 D:\Godot Tuto\GodotTuto\Premier jeu\.mono\temp\obj\Tools\Dodging Creeps.pdb
+D:\GitHub\Godot Tuto\GodotTuto\Premier jeu\.mono\temp\bin\Tools\Dodging Creeps.dll
+D:\GitHub\Godot Tuto\GodotTuto\Premier jeu\.mono\temp\bin\Tools\Dodging Creeps.pdb
+D:\GitHub\Godot Tuto\GodotTuto\Premier jeu\.mono\temp\obj\Tools\Dodging Creeps.csprojAssemblyReference.cache
+D:\GitHub\Godot Tuto\GodotTuto\Premier jeu\.mono\temp\obj\Tools\Dodging Creeps.csproj.CoreCompileInputs.cache
+D:\GitHub\Godot Tuto\GodotTuto\Premier jeu\.mono\temp\obj\Tools\Dodging Creeps.dll
+D:\GitHub\Godot Tuto\GodotTuto\Premier jeu\.mono\temp\obj\Tools\Dodging Creeps.pdb
